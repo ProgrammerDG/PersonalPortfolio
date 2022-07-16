@@ -1,0 +1,496 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.h1{
+    text-align: center;
+    font-size: 40px;
+    animation: h1Ani 3s ease-in-out infinite alternate;
+}
+
+@keyframes h1Ani {
+    0%{
+        letter-spacing: normal;
+    }
+    100%{
+        letter-spacing: 2px;
+    }
+}
+
+#nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgba(47,120,137,255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 100;
+}
+
+#logoImg{
+    height: 100%;
+    width: 100px;
+}
+
+#navLinksDiv{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#navLinksDiv a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+#navLinksDiv a:hover{
+    transform: scale(1.1);
+    color: rgb(212,175,55);
+}
+
+#hamburgerBtn{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(47,120,137,255);
+    border: none;
+    display: none;
+}
+
+#hamburgerBtn:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#hamburgerBtn i{
+    color: white;
+}
+
+#navHamDisplayDiv{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.87);
+    position: fixed;
+    top: 0%;
+    z-index: 1000;
+}
+
+#navHamDisplayDiv a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    display: block;
+    margin-top: 20%;
+}
+
+#navHamDisplayDiv a:hover{
+    transform: scale(1.1);
+}
+
+.navHamDisplayDiv{
+    display: none;
+}
+
+#navHamDisplayCloseBtn{
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+
+#navHamDisplayCloseBtn{
+    color: white;
+    margin-left: 90%;
+}
+
+#carouselDiv{
+    width: 100%;
+    height: 450px;
+}
+#carouselImg{
+    width: 100%;
+    height: 100%;
+}
+
+#introSection{
+    width: 100%;
+    height: auto;
+    background-color: rgb(37, 35, 35);
+    margin-top: -33px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#introSectionH1{
+    color: white;
+}
+
+#introSectionHr{
+    background-color: rgb(212,175,55);
+    height: 3px;
+    border: none;
+    width: 60%;
+}
+
+#introSectionP{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+#introSectionDiv{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#introSectionDiv:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+#introSectionA{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:sans-serif;
+    border: 2px solid
+    rgb(212,175,55);
+    padding: 15px;
+}
+
+#introSectionA:hover{
+    background-color: rgb(212,175,55);
+}
+
+#introSection2{
+    width: 100%;
+    height: auto;
+    margin-top: -33px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+#introSection2H1{
+    color:rgb(212,175,55);
+}
+
+#introSection2Hr{
+    background-color: rgb(212,175,55);
+    height: 3px;
+    border: none;
+    width: 40%;
+}
+
+#introSection2P{
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+}
+
+#introSection3{
+    width: 80%;
+    margin-left: 10%;
+    margin-left: 10%;
+    background-color: rgb(247, 245, 245);
+    height: auto;
+    margin-top: -33px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+#introSection3Hr{
+    background-color: rgb(212,175,55);
+    height: 3px;
+    border: none;
+    width: 20%;
+}
+
+#introSection3P{
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+}
+
+#introSection3Div{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#introSection3Div:hover{
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+#introSection3A{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:sans-serif;
+    padding: 15px;
+    background-color: rgb(212,175,55);
+}
+
+#servicesSection{
+    width: 100%;
+    height: auto;
+}
+
+#servicesSectionH1{
+    color:rgb(212,175,55);
+}
+
+#servicesSectionHr{
+    background-color: rgb(212,175,55);
+    height: 3px;
+    border: none;
+    width: 20%;
+}
+
+#servicesSectionDiv{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#servicesSectionDiv div{
+    width: 400px;
+    height: 280px;
+    margin: 20px;
+    padding: 10px;
+    overflow: scroll;
+}
+
+#servicesSectionDiv div::-webkit-scrollbar{
+    display: none;
+}
+
+#servicesSectionDiv div:hover{
+    border:1px solid rgb(212,175,55);
+}
+
+#servicesSectionDiv div h1{
+    text-align: center;
+    margin-top: -10px;
+}
+
+#servicesSectionDiv div i{
+    color:grey;
+    text-align: center;
+}
+
+#servicesSectionDiv div p{
+    color: grey;
+    text-align: center;
+}
+
+#projectsSection{
+    width: 100%;
+    margin-top: 50px;
+    height: auto;
+    background-color: rgb(37, 35, 35);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#projectsSectionH1{
+    color: white;
+}
+
+#projectsSectionHr{
+    background-color: rgb(212,175,55);
+    height: 3px;
+    border: none;
+    width: 20%;
+}
+
+#projectsSectionDiv{
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#projectsSectionDiv div{
+    width: 400px;
+    height: 350px;
+    margin: 10px;
+    padding: 10px;
+    overflow: scroll;
+    transition: all 1s ease-in-out;
+}
+
+#projectsSectionDiv div::-webkit-scrollbar{
+    display: none;
+}
+
+#projectsSectionDiv div:hover{
+    border:1px solid rgb(212,175,55);
+    transform:perspective(500px) rotateX(-30deg);
+}
+
+#projectsSectionDiv div p{
+    text-align: center;
+    color: white;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+#projectsSectionDiv div img{
+    width: 100%;
+    height: 80%;
+}
+
+#introImg{
+    width: 40%;
+    height: 600px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 50px;
+}
+
+
+#aboutSection{
+    width: 100%;
+    height: auto;
+    background-color: rgb(247, 245, 245);
+    background-size:cover;
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#aboutSectionH1{
+    color: black;
+}
+
+#aboutSectionHr{
+    background-color: rgb(212,175,55);
+    height: 3px;
+    border: none;
+    width: 20%;
+}
+
+#aboutSectionP{
+    color: grey;
+    text-align: center;
+    font-size: 20px;
+}
+
+
+#footer{
+    width: 100%;
+    height: auto;
+    background-color: rgba(47,120,137,255);
+    margin-top: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+#footerLinksDiv{
+    width: 30%;
+    height: 10%;
+    margin-left: 35%;
+    margin-right: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerLinksDiv a{
+    text-decoration: none;
+    color: white;
+}
+
+#footerLinksDiv a:hover{
+    transform: scale(1.1);
+    color:  rgb(212,175,55);
+}
+
+#backToTopP{
+    position: fixed;
+    bottom: -5%;
+    margin-left: 92%;
+    font-size: 50px;
+    background-color:  rgb(212,175,55);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+
+#backToTopP:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+#backToTopP a{
+    text-decoration: none;
+    color: white;
+}
+
+#addressP{
+    text-align: center;
+    color: rgb(212,175,55);
+    margin-top: 50px;
+    text-decoration:overline;
+}
+
+
+
+
+
+@media (max-width:800px) {
+    #navLinksDiv{
+        display: none;
+    }
+    #hamburgerBtn{
+        display: block;
+    }
+    #backToTopP{
+        margin-left: 80%;
+    }
+    #footerLinksDiv{
+        width: 50%;
+        height: 10%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    #addressP{
+        text-decoration:none;
+    }
+    #introImg{
+        width: 60%;
+        height: 400px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }   
+}
