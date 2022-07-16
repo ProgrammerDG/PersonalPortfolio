@@ -493,4 +493,7 @@ html{
         margin-left: 20%;
         margin-right: 20%;
     }   
+    #introSectionH1{
+        font-size: medium;
+    }
 }
